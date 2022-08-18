@@ -4,5 +4,6 @@ export class Book{
   author!: string;
   category!: string;
   description!: string;
-  image!: string
+  image!: string;
+  read!: boolean;
 }

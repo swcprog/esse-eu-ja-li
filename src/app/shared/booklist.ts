@@ -5,12 +5,12 @@ export const BOOKS = [
     author: "Miguel de Cervantes",
     category: "adventure",
     description: `Originalmente "El ingenioso hidalgo Don Quixote de La Mancha", com sua primeira edição publicada em Madrid no ano de 1605, Dom Quixote é o livro mais vendido em todo o mundo.
-
-
     A história criada por Miguel de Cervantes narra as aventuras de dom Quixote e seu companheiro e amigo fiel Sancho Pança. A ação gira em torno das três incursões da dupla por terras da Mancha, de Aragão e da Catalunha.`,
     image: "https://m.media-amazon.com/images/I/51XULadddlL.jpg",
+    read: false
   },
   {
+    read: false,
     name: "Um conto de duas cidades (1859)",
     point: "6",
     author: "Charles Dickens",
@@ -19,6 +19,7 @@ export const BOOKS = [
     image: "https://lirp.cdn-website.com/174487e2/dms3rep/multi/opt/Um-Conto-de-Duas-Cidades-1920w.jpeg"
   },
   {
+    read: false,
     name: "O Alquimista (1988)",
     point: "3",
     author: "Paulo Coelho",
@@ -30,6 +31,7 @@ export const BOOKS = [
     image: "https://lirp.cdn-website.com/174487e2/dms3rep/multi/opt/o-alquimista-22b5e5e0-1920w.jpeg"
   },
   {
+    read: false,
     name: " O Pequeno Príncipe (1943)",
     point: "2",
     author: "Antoine de Saint-Exupéry",
@@ -41,6 +43,7 @@ export const BOOKS = [
     image: "https://lirp.cdn-website.com/174487e2/dms3rep/multi/opt/o-pequeno-principe-1920w.jpg"
   },
   {
+    read: false,
     name: "Harry Potter e a Pedra Filosofal (1997)",
     point: "3",
     author: "J. K. Rowling",
@@ -50,6 +53,7 @@ export const BOOKS = [
     image: "https://lirp.cdn-website.com/174487e2/dms3rep/multi/opt/harry-potter-e-a-pedra-filosofal-livro-1920w.jpg"
   },
   {
+    read: false,
     name: "O Hobbit (1937)",
     point: "2",
     author: "J. R. R. Tolkien",
@@ -58,6 +62,7 @@ export const BOOKS = [
     image: "https://images-na.ssl-images-amazon.com/images/I/71UZKQ3-wCL.jpg"
   },
   {
+    read: false,
     name: "As Aventuras de Sherlock Holmes (1937)",
     point: "6",
     author: "Arthur Conan Doyle",
@@ -67,6 +72,7 @@ export const BOOKS = [
     image: "https://www.penguinlivros.pt/wp-content/uploads/2020/09/3e28BDN7oWnzPGlqHdAj.png"
   },
   {
+    read: false,
     name: "As Crônicas de Nárnia (1950)",
     point: "6",
     author: "C.S. Lewis",
@@ -75,6 +81,7 @@ export const BOOKS = [
     image: "https://images-na.ssl-images-amazon.com/images/I/711WTt57f7L.jpg"
   },
   {
+    read: false,
     name: "A Saga Wingfeather: nos Limites do mar Sombrio da Escuridão ",
     point: "6",
     author: "Andrew Peterson",
@@ -83,6 +90,7 @@ export const BOOKS = [
     image: "https://images-na.ssl-images-amazon.com/images/I/81mfukyzJJS.jpg"
   },
   {
+    read: false,
     name: "O Menino do Pijama Listrado",
     point: "11",
     author: "John Boyne",
@@ -91,6 +99,7 @@ export const BOOKS = [
     image: "https://images-na.ssl-images-amazon.com/images/I/91YD+gCjjyL.jpg"
   },
   {
+    read: false,
     name: "O Encantador de Livros",
     point: "3",
     author: "Lucas de Sousa",
@@ -99,6 +108,7 @@ export const BOOKS = [
     image: "https://images-na.ssl-images-amazon.com/images/I/61vfeHQs4YL.jpg"
   },
   {
+    read: false,
     name: "O diário de Anne Frank",
     point: "11",
     author: "Anne Frank",

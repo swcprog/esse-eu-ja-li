@@ -16,6 +16,9 @@ export class BooksComponent implements OnInit {
   books!: Book[];
   user!: User;
 
+
+
+
   constructor(private bookService: BookService,
     private userService: UserService,
     @Inject('BaseURL') protected baseURL:any) { }
@@ -26,7 +29,7 @@ export class BooksComponent implements OnInit {
     .subscribe(books => this.books = books)
   }
 
-  read(book: Book){
+  toRead(book: Book){
     this.userService.addBook(this.user, book );
   }
 

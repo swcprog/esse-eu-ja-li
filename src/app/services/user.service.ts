@@ -41,6 +41,7 @@ export class UserService {
   addBook(user: User, book: Book){
     if(user.booksList.indexOf(book)== -1){
       user.booksList.push(book);
+      book.read = true;
     }
 
   }
