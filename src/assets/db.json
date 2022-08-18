@@ -1,0 +1,52 @@
+{
+  "books": [
+    {
+      "name": "Dom Quixote (1605)",
+      "point": "15",
+      "author": "Miguel de Cervantes",
+      "category": "adventure",
+      "description": "",
+      "image": "/src/assets/images/harry.jpg"
+    },
+    {
+      "name": "Um conto de duas cidades (1859)",
+      "point": "4",
+      "author": "Charles Dickens",
+      "category": "romance",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": "O Alquimista (1988)",
+      "point": "2",
+      "author": "Paulo Coelho",
+      "category": "romance",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": " O Pequeno Príncipe (1943)",
+      "point": "1",
+      "author": "Antoine de Saint-Exupéry",
+      "category": "fable",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": "Harry Potter e a Pedra Filosofal (1997)",
+      "point": "2",
+      "author": "J. K. Rowling",
+      "category": "romance",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": "O Hobbit (1937)",
+      "point": "1",
+      "author": "J. R. R. Tolkien",
+      "category": "fantasy",
+      "description": "",
+      "image": ""
+    }
+  ]
+}

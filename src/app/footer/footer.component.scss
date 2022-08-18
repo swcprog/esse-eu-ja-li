@@ -1,0 +1,18 @@
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+
+}
