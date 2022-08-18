@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../services/user.service';
+import { Observable } from 'rxjs';
+import { User } from '../shared/user';
+
 
 @Component({
   selector: 'app-ranking',
@@ -7,9 +11,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RankingComponent implements OnInit {
 
-  constructor() { }
+  users!: User[];
+
+  constructor(private service: UserService) { }
 
   ngOnInit(): void {
+    this.service.getUsers()
+    .subscribe(users => this.users = users)
   }
 
 }

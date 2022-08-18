@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 
@@ -26,6 +27,7 @@ import { baseURL } from './shared/baseurl';
 import { BookService } from './services/book.service';
 import { RankingComponent } from './ranking/ranking.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -50,11 +52,13 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     MatCardModule,
     MatTabsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatProgressBarModule
 
   ],
   providers: [
     BookService,
+    UserService
     {provide: 'BaseURL', useValue: baseURL}
   ],
   bootstrap: [AppComponent]
