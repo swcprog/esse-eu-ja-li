@@ -18,7 +18,13 @@ export class RankingComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.getUsers()
-    .subscribe(users => this.users = users)
+    .subscribe(users => this.users = users.sort(this.sortByPoints).reverse())
+
+
+  }
+
+  sortByPoints(userA: User, userB: User){
+    return (parseInt(userA.totalPoints) - parseInt(userB.totalPoints))
   }
 
 }

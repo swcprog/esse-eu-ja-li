@@ -5,4 +5,5 @@ export class User{
   booksList!: Book[];
   totalPoints!: string;
   specialist!: boolean;
+  image!: string;
 }
