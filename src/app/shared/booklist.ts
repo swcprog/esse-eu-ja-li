@@ -63,8 +63,8 @@ export const BOOKS = [
     author: "Arthur Conan Doyle",
     category: "adventure",
     description: `
-    Sherlock Holmes é um detetive britânico enigmático e pedante do final do século XIX e início do século XX. Ele utiliza a metodologia científica e a lógica dedutiva para solucionar seus casos e conta com a ajuda de seu fiel amigo e parceiro dr. Watson. Observação, perspicácia e um pouco de intuição são alguns dos instrumentos usados por Sherlock Holmes para desvendar os seis curiosos casos reunidos nesta obra e narrados pelo atento doutor Watson. `,
-    image: "https://images-na.ssl-images-amazon.com/images/I/71UZKQ3-wCL.jpg"
+    Sherlock Holmes é um detetive britânico enigmático e pedante do final do século XIX e início do século XX. Ele utiliza a metodologia científica e a lógica dedutiva para solucionar seus casos e conta com a ajuda de seu fiel amigo e parceiro dr. Watson.`,
+    image: "https://www.penguinlivros.pt/wp-content/uploads/2020/09/3e28BDN7oWnzPGlqHdAj.png"
   },
   {
     name: "As Crônicas de Nárnia (1950)",
@@ -73,5 +73,37 @@ export const BOOKS = [
     category: "fantasy",
     description: `A aventura começa quando Digory e Polly vão parar no gabinete secreto do excêntrico tio André. Ludibriada por ele, Polly toca o anel mágico e desaparece. Digory, aterrorizado, decide partir imediatamente em busca da amiga no Outro Mundo. Lá ele encontra Polly e, juntos, ouvem Aslam cantar sua canção ao criar o mundo encantado de Nárnia, repleto de sol, árvores, flores, relva e animais.`,
     image: "https://images-na.ssl-images-amazon.com/images/I/711WTt57f7L.jpg"
+  },
+  {
+    name: "A Saga Wingfeather: nos Limites do mar Sombrio da Escuridão ",
+    point: "5",
+    author: "Andrew Peterson",
+    category: "fantasy",
+    description: `No mesmo estilo imaginativo de C.S. Lewis, a Saga Wingfeather, de Andrew Peterson, é uma fantasia épica e redentiva, considerada As Crônicas de Nárnia para uma nova geração. Quando as crianças Igiby fogem com sua mãe e seu avô, um ex-pirata, através do Mar Sombrio da Escuridão, elas acabam cara a cara com um segredo monstruoso. Feridas antigas trarão dor, conforme a guerra estoura e um poderoso inimigo se revela.`,
+    image: "https://images-na.ssl-images-amazon.com/images/I/81mfukyzJJS.jpg"
+  },
+  {
+    name: "O Menino do Pijama Listrado",
+    point: "10",
+    author: "John Boyne",
+    category: "drama",
+    description: `Bruno tem nove anos e não sabe nada sobre o Holocausto e a Solução Final contra os judeus. Também não faz idéia que seu país está em guerra com boa parte da Europa, e muito menos que sua família está envolvida no conflito. Na verdade, Bruno sabe apenas que foi obrigado a abandonar a espaçosa casa em que vivia em Berlim e a mudar-se para uma região desolada, onde ele não tem ninguém para brincar nem nada para fazer.`,
+    image: "https://images-na.ssl-images-amazon.com/images/I/91YD+gCjjyL.jpg"
+  },
+  {
+    name: "O Encantador de Livros",
+    point: "2",
+    author: "Lucas de Sousa",
+    category: "fantasy",
+    description: `Aventure-se na Cidade dos Livros! Um lugar mágico, onde a leitura é mais que uma paixão, os moradores são leitores insaciáveis e as árvores são recheadas de frutos e livros. Conheça o Encantador de Livros, um contador de histórias capaz de fazer os livros voarem, e Benjamim, um menino analfabeto que, juntamente com seus amigos, terá que salvar a cidade de uma terrível ameaça.`,
+    image: "https://images-na.ssl-images-amazon.com/images/I/61vfeHQs4YL.jpg"
+  },
+  {
+    name: "O diário de Anne Frank",
+    point: "10",
+    author: "Anne Frank",
+    category: "drama",
+    description: `O Diário de Anne Frank teve a autenticidade confirmada por peritos. Estudos forenses da caligrafia de Anne e exame do papel do diário, da tinta e da cola comprovaram ser de material existente na época. A conclusão foi oficialmente apresentada pelo Instituto Estatal Holandês para Documentação da Guerra.`,
+    image: "https://images-na.ssl-images-amazon.com/images/I/514tKci6HIL.jpg"
   }
 ]

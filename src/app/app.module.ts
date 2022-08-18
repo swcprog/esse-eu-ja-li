@@ -24,6 +24,8 @@ import { HomeComponent } from './home/home.component';
 import { BooksComponent } from './books/books.component';
 import { baseURL } from './shared/baseurl';
 import { BookService } from './services/book.service';
+import { RankingComponent } from './ranking/ranking.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,10 @@ import { BookService } from './services/book.service';
     NavigationComponent,
     FooterComponent,
     HomeComponent,
-    BooksComponent
+    BooksComponent,
+    RankingComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -44,7 +49,8 @@ import { BookService } from './services/book.service';
     MatListModule,
     MatCardModule,
     MatTabsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
 
   ],
   providers: [
