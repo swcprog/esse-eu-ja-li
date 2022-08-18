@@ -3,19 +3,19 @@ export const USERS = [
   {
     name: "Peter Pam",
     booksList: [],
-    totalPoints: "0",
+    totalPoints: "20",
     specialist: false
   },
   {
     name: "Hisoka",
     booksList: [],
-    totalPoints: "0",
+    totalPoints: "30",
     specialist: false
   },
   {
     name: "Thomas Shelby",
     booksList: [],
-    totalPoints: "0",
+    totalPoints: "40",
     specialist: false
   },
 

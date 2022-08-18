@@ -58,7 +58,7 @@ import { UserService } from './services/user.service';
   ],
   providers: [
     BookService,
-    UserService
+    UserService,
     {provide: 'BaseURL', useValue: baseURL}
   ],
   bootstrap: [AppComponent]
