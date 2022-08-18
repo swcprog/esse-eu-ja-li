@@ -13,14 +13,17 @@ import { User } from '../shared/user';
 export class RankingComponent implements OnInit {
 
   users!: User[];
+  user!: User;
 
   constructor(private service: UserService) { }
 
   ngOnInit(): void {
+    this.user = this.service.getUser("1");
     this.service.getUsers()
-    .subscribe(users => this.users = users.sort(this.sortByPoints).reverse())
-
-
+    .subscribe(users => {this.users = users.sort(this.sortByPoints).reverse(),
+    this.users.forEach(user => {
+      this.service.setUserPoints(user.id)})
+    });
   }
 
   sortByPoints(userA: User, userB: User){

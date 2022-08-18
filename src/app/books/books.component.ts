@@ -1,6 +1,8 @@
+import { UserService } from './../services/user.service';
 import { Component, Inject, OnInit } from '@angular/core';
 import { BookService } from '../services/book.service';
 import { Book } from '../shared/book';
+import { User } from '../shared/user';
 
 @Component({
   selector: 'app-books',
@@ -12,13 +14,20 @@ import { Book } from '../shared/book';
 export class BooksComponent implements OnInit {
 
   books!: Book[];
+  user!: User;
 
-  constructor(private service: BookService,
+  constructor(private bookService: BookService,
+    private userService: UserService,
     @Inject('BaseURL') protected baseURL:any) { }
 
   ngOnInit(): void {
-    this.service.getBooks()
+    this.user = this.userService.getUser("1")
+    this.bookService.getBooks()
     .subscribe(books => this.books = books)
+  }
+
+  read(book: Book){
+    this.userService.addBook(this.user, book );
   }
 
 }

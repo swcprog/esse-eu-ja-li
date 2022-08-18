@@ -6,4 +6,5 @@ export class User{
   totalPoints!: string;
   specialist!: boolean;
   image!: string;
+  id!: string;
 }
