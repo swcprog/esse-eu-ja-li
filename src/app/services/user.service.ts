@@ -3,6 +3,7 @@ import { USERS } from '../shared/userlist';
 import { Observable, of } from 'rxjs';
 import { User } from '../shared/user';
 import { Book } from '../shared/book';
+import { UntypedFormBuilder } from '@angular/forms';
 
 @Injectable({
   providedIn: 'root'
@@ -38,7 +39,10 @@ export class UserService {
   }
 
   addBook(user: User, book: Book){
-    user.booksList.push(book);
+    if(user.booksList.indexOf(book)== -1){
+      user.booksList.push(book);
+    }
+
   }
 
   setUserPoints(id: string){
