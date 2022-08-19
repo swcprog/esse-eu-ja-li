@@ -21,7 +21,7 @@
       </mat-card-content>
       <mat-card-actions>
         <button mat-button>LER</button>
-        <button mat-button (click)="toRead(book)" >MARCAR COMO LIDO</button>
+        <button [disabled]="book.read" mat-button (click)="toRead(book)" >MARCAR COMO LIDO</button>
       </mat-card-actions>
     </mat-card>
   </div>

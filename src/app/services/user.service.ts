@@ -38,12 +38,13 @@ export class UserService {
     return this.getUser(id).booksList;
   }
 
-  addBook(user: User, book: Book){
+  addBook(user: User, book: Book): boolean {
     if(user.booksList.indexOf(book)== -1){
       user.booksList.push(book);
       book.read = true;
-    }
 
+    }
+    return book.read;
   }
 
   setUserPoints(id: string){
