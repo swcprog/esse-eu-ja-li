@@ -12,6 +12,12 @@
       <a mat-list-item routerLink="/books" [queryParams]="{ key: userID }" queryParamsHandling="merge"><mat-icon aria-hidden="false" fontIcon="book"></mat-icon>
         Livros</a>
     </mat-nav-list>
+
+    <mat-nav-list class="logout">
+      <a  mat-list-item routerLink="/login"><mat-icon color="primary" aria-hidden="false" fontIcon="logout"></mat-icon>
+        Logout</a>
+    </mat-nav-list>
+
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">

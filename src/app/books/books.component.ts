@@ -5,6 +5,7 @@ import { BookService } from '../services/book.service';
 import { Book } from '../shared/book';
 import { User } from '../shared/user';
 import {MatSnackBar} from '@angular/material/snack-bar';
+import { switchMap, map } from 'rxjs';
 
 @Component({
   selector: 'app-books',
@@ -31,13 +32,16 @@ export class BooksComponent implements OnInit {
     this.activatedRoute.queryParams.subscribe((params) => {
       this.user = this.userService.getUser(params['key'].toString());
     });
-
     this.bookService.getBooks().subscribe((books) => (this.books = books));
+    this.bookService.verify(this.user, this.books);
+
   }
+
 
   toRead(book: Book) {
     this.userService.addBook(this.user, book);
     this.openSackBar(book.point);
+
   }
 
   openSackBar(points: string) {

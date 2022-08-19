@@ -10,8 +10,7 @@ export const routes: Routes = [
   { path: 'home',  component: HomeComponent },
   { path: 'ranking', component: RankingComponent },
   { path: 'books', component: BooksComponent },
-  //{ path: 'login', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
   { path: '', component: LoginComponent },
 
-  //{ path: '', redirectTo: '/login', pathMatch: 'full' }
 ];
