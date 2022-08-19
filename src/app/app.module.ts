@@ -12,6 +12,8 @@ import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 
 
@@ -28,6 +30,7 @@ import { BookService } from './services/book.service';
 import { RankingComponent } from './ranking/ranking.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { UserService } from './services/user.service';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,7 @@ import { UserService } from './services/user.service';
     HomeComponent,
     BooksComponent,
     RankingComponent,
+    LoginComponent,
 
 
   ],
@@ -53,7 +57,8 @@ import { UserService } from './services/user.service';
     MatTabsModule,
     HttpClientModule,
     AppRoutingModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatSnackBarModule
 
   ],
   providers: [

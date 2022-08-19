@@ -18,7 +18,7 @@ export class RankingComponent implements OnInit {
   constructor(private service: UserService) { }
 
   ngOnInit(): void {
-    this.user = this.service.getUser("1");
+
     this.service.getUsers()
     .subscribe(users => {this.users = users.sort(this.sortByPoints).reverse(),
     this.users.forEach(user => {
