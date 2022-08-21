@@ -13,11 +13,11 @@
         Livros</a>
     </mat-nav-list>
 
-    <mat-nav-list class="logout">
-      <a  mat-list-item routerLink="/login"><mat-icon color="primary" aria-hidden="false" fontIcon="logout"></mat-icon>
-        Logout</a>
+    <mat-nav-list (click)="logout" class="logout">
+      <a  mat-list-item routerLink="/login"  ><mat-icon color="primary" aria-hidden="false" fontIcon="logout"></mat-icon>
+        Change User</a>
     </mat-nav-list>
-
+  <mat-card *ngIf="userID" class="flex"><img mat-card-avatar src="{{user.image}}"><mat-card-subtitle>Running</mat-card-subtitle></mat-card>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
@@ -29,7 +29,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Esse Eu Já Li</span>
+      <span>ESSE EU JÁ LI</span><img class="logo-icon" src="https://cdn.vox-cdn.com/thumbor/Ybu_sa8n8NJWlb8ICL_SKdFSnkI=/0x0:256x256/1400x933/filters:focal(110x90:150x130):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/58497263/Unsealed_Spellbook_rune.0.png" alt="">
     </mat-toolbar>
     <ng-content></ng-content>
   </mat-sidenav-content>

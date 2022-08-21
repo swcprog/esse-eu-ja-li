@@ -4,7 +4,7 @@ export class User{
   name!: string;
   booksList!: Book[];
   totalPoints!: string;
-  specialist!: boolean;
+  specialist!: string[];
   image!: string;
   id!: string;
 }

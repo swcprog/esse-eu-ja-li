@@ -47,7 +47,7 @@ export const BOOKS = [
     name: "Harry Potter e a Pedra Filosofal (1997)",
     point: "3",
     author: "J. K. Rowling",
-    category: "romance",
+    category: "fantasy",
     description: `Lançado há apenas 24 anos, Harry Potter e a Pedra Filosofal se tornou um fenômeno logo no lançamento, mesmo que J. K. Rowling fosse ainda uma desconhecida. A autora criou com maestria um novo universo onde o bruxo descobre o mundo da magia e enfrenta desafios do início ao fim.
     De leitura leve e envolvente, o primeiro romance da série é um fenômeno entre jovens e adultos.`,
     image: "https://lirp.cdn-website.com/174487e2/dms3rep/multi/opt/harry-potter-e-a-pedra-filosofal-livro-1920w.jpg"

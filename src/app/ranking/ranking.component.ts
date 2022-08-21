@@ -14,7 +14,8 @@ export class RankingComponent implements OnInit {
 
   users!: User[];
   user!: User;
-
+  vazia = true;
+  specialistMsg = '';
   constructor(private service: UserService) { }
 
   ngOnInit(): void {
@@ -22,7 +23,22 @@ export class RankingComponent implements OnInit {
     this.service.getUsers()
     .subscribe(users => {this.users = users.sort(this.sortByPoints).reverse(),
     this.users.forEach(user => {
-      this.service.setUserPoints(user.id)})
+      this.service.setUserPoints(user.id);
+      this.service.setSpecialist(user);
+       this.setSpecialist(user);
+       console.log(this.specialistMsg)
+       })
+
+    });
+
+  }
+
+  setSpecialist(user: User){
+    user.specialist.forEach(speciality => {
+      if(speciality != ''){
+        this.specialistMsg += ` ${speciality} `
+      }
+
     });
   }
 

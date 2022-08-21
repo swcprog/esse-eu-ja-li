@@ -1,8 +1,10 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Observable } from 'rxjs';
+import { Observable, switchMap } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import { User } from '../shared/user';
+import { UserService } from '../services/user.service';
 
 
 @Component({
@@ -12,6 +14,8 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 export class NavigationComponent {
   userID!: string;
+  user!: User;
+  notLoginPage!: boolean;
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
@@ -20,12 +24,21 @@ export class NavigationComponent {
     );
 
   constructor(private breakpointObserver: BreakpointObserver,
-    private activatedRoute: ActivatedRoute) {}
+    private activatedRoute: ActivatedRoute,
+    private userService: UserService) {}
+
+  logout(){
+    console.log("logout");
+
+  }
+
+
   ngOnInit(): void{
 
     this.activatedRoute.queryParams.subscribe((params) => {
     this.userID = params['key'].toString();
     console.log(this.userID)
+    this.user = this.userService.getUser(this.userID);
     });
   }
 }
