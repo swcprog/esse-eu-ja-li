@@ -21,14 +21,14 @@ export class RankingComponent implements OnInit {
   ngOnInit(): void {
 
     this.service.getUsers()
-    .subscribe(users => {this.users = users.sort(this.sortByPoints).reverse(),
+    .subscribe(users => {this.users = users,
     this.users.forEach(user => {
       this.service.setUserPoints(user.id);
       this.service.setSpecialist(user);
        this.setSpecialist(user);
        console.log(this.specialistMsg)
-       })
-
+       }),
+      this.users.sort((this.sortByPoints))
     });
 
   }
@@ -43,7 +43,7 @@ export class RankingComponent implements OnInit {
   }
 
   sortByPoints(userA: User, userB: User){
-    return (parseInt(userA.totalPoints) - parseInt(userB.totalPoints))
+    return (parseInt(userB.totalPoints) - parseInt(userA.totalPoints))
   }
 
 }
