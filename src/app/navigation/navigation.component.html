@@ -13,8 +13,8 @@
         Livros</a>
     </mat-nav-list>
 
-    <mat-nav-list (click)="logout" class="logout">
-      <a  mat-list-item routerLink="/login"  ><mat-icon color="primary" aria-hidden="false" fontIcon="logout"></mat-icon>
+    <mat-nav-list  class="logout">
+      <a mat-list-item routerLink="/login" ><mat-icon color="primary" aria-hidden="false" fontIcon="logout"></mat-icon>
         Change User</a>
     </mat-nav-list>
   <mat-card *ngIf="userID" class="flex"><img mat-card-avatar src="{{user.image}}"><mat-card-subtitle>Running</mat-card-subtitle></mat-card>

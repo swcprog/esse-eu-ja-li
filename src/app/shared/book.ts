@@ -6,4 +6,5 @@ export class Book{
   description!: string;
   image!: string;
   read!: boolean;
+  url!: string;
 }

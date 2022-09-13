@@ -46,4 +46,6 @@ export class RankingComponent implements OnInit {
     return (parseInt(userB.totalPoints) - parseInt(userA.totalPoints))
   }
 
+
+
 }

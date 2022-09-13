@@ -14,7 +14,7 @@ import { UserService } from '../services/user.service';
 })
 export class NavigationComponent {
   userID!: string;
-  user!: User;
+  user!: any;
   notLoginPage!: boolean;
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
@@ -29,6 +29,9 @@ export class NavigationComponent {
 
   logout(){
     console.log("logout");
+    this.user = null;
+    this.userID = "";
+    location.reload();
 
   }
 
